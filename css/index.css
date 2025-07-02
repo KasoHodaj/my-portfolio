@@ -1,0 +1,165 @@
+:root {
+  --netflix-red: #E50914;
+  --netflix-dark-red: #B20710;
+  --netflix-bg: #141414;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--netflix-bg);
+  color: var(--text-color);
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* === Splash Screen === */
+
+.intro-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--netflix-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+  z-index: 2;
+}
+
+.intro-screen h1 {
+  color: var(--netflix-red);
+  font-size: 4rem;
+  letter-spacing: 2px;
+  animation: flicker 1.2s infinite;
+}
+
+/* Flicker animation */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.intro-screen.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* === Profile Selection === */
+.profile-select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: var(--netflix-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.profile-select.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.profile-select h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* === Profiles Grid === */
+.profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 90vw;
+}
+
+.profile {
+  text-decoration: none;
+  color: var(--text-color);
+  text-align: center;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.profile img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.profile:hover img {
+  transform: scale(1.1);
+  border-color: var(--netflix-red);
+  box-shadow: 0 0 8px var(--netflix-dark-red);
+}
+
+.profile p {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+
+/* === Responsive Styles === */
+@media (max-width: 900px) {
+  .intro-screen h1 {
+    font-size: 3rem;
+  }
+  .profiles {
+    gap: 1.2rem;
+    max-width: 98vw;
+  }
+  .profile img {
+    width: 140px;
+    height: 140px;
+  }
+  .profile-select h2 {
+    font-size: 2.2rem;
+  }
+  .profile p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-screen h1 {
+    font-size: 2rem;
+  }
+  .profiles {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .profile img {
+    width: 120px;
+    height: 120px;
+  }
+  .profile-select {
+    padding: 2rem 0.5rem;
+  }
+  .profile-select h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .profile p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="../../css/home.css" />
+    <style>
+      body {
+        background-color: #111;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .back-button {
+        display: inline-block;
+        margin: 1.5rem 0 1rem 1rem;
+        background-color: var(--netflix-red);
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s, box-shadow 0.2s;
+        font-size: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        border: none;
+        position: static;
+        z-index: 1;
+      }
+
+      .back-button:hover {
+        background-color: var(--netflix-dark-red);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        color: #e50914;
+        margin: 3rem 0 2rem;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 1.5rem;
+        max-width: 900px;
+        margin: 0 auto 4rem;
+        padding: 0 1rem;
+      }
+
+      .project-card {
+        background: #1c1c1c;
+        border-radius: 8px;
+        padding: 1.5rem 2rem;
+        border: 1px solid #2b2b2b;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        color: #eee;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        border-color: #e50914;
+        color: #fff;
+      }
+
+      .project-card h3 {
+        margin-top: 0;
+        color: #e50914;
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
+        display: inline-block;
+      }
+
+      .project-card p {
+        flex-grow: 1;
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+      }
+
+      .project-card span {
+        font-size: 0.85rem;
+        color: #bbb;
+        font-style: italic;
+        align-self: flex-start;
+      }
+
+      .project-card {
+        position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.2rem; /* add space for the link if needed */
+      }
+
+      .project-card-link {
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+        background-color: var(--netflix-red);
+        color: white;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.85rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        z-index: 10;
+      }
+
+      .project-card-link:hover {
+        background-color: var(--netflix-dark-red);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        .project-card {
+          padding: 1rem 1.5rem;
+        }
+
+        .project-card h3 {
+          font-size: 1.1rem;
+        }
+
+        .project-card p {
+          font-size: 0.95rem;
+        }
+      }
+
+      .project-card-link {
+        top: 1.2rem;
+        right: 1.2rem;
+        font-size: 0.8rem;
+        padding: 0.25rem 0.7rem;
+      }
+
+      @media (max-width: 480px) {
+        .back-button {
+          margin: 1rem 0 0.5rem 0.5rem;
+          font-size: 0.95rem;
+          padding: 0.4rem 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- === Header === -->
+    <header class="main-header">
+    <div class="logo">Kaso Hodaj</div>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="./site.html">Behind the Build</a>
+      <a href="../../index.html">
+        <span style="color: #e50914; font-size: larger">Exit</span>
+      </a>
+    </nav>
+  </header>
+
+    <a href="../home.html" class="back-button">Home</a>
+
+    <section class="projects-section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>RESQ – Emergency App</h3>
+          <a
+            href="https://github.com/KasoHodaj/DataStructuresAndAlgorithms.git"
+            target="_blank"
+            rel="noopener"
+            class="project-card-link"
+            >LINK</a
+          >
+          <span>Mar 2025 – Present</span>
+          <p>
+            Currently developing a Android app using Kotlin and Jetpack Compose,
+            focusing on Material Design 3 principles. The app enables quick
+            one-tap emergency notifications with real-time GPS location sharing
+            to trusted contacts. Emphasizing accessibility and a clean,
+            intuitive user interface to assist users in critical situations.
+            This project strengthens my skills in mobile development, UI design,
+            and independent project management.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>HomAlert System - Group Project</h3>
+          <a
+            href="https://github.com/ChrysKoum/HomAlert.git"
+            target="_blank"
+            rel="noopener"
+            class="project-card-link"
+            >LINK</a
+          >
+          <span>Oct 2024 – May 2025</span>
+          <p>
+            Full-stack IoT home security system integrating hardware and web
+            technologies. Designed frontend prototypes in Figma and developed
+            using HTML, CSS, and JavaScript. Backend built with Node.js and
+            Firebase for real-time data management.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>AuroraCast</h3>
+          <a
+            href="https://github.com/KasoHodaj/AuroraCast.git"
+            target="_blank"
+            rel="noopener"
+            class="project-card-link"
+            >LINK</a
+          >
+          <span>Dec 2024 – Feb 2025</span>
+          <p>
+            Real-time weather forecast app using Node.js, Express, and EJS
+            templating. Integrated OpenWeatherMap API to deliver accurate,
+            location-based weather and AQI data. Focused on backend server
+            architecture and API integration. Deployed on Render platform,
+            including SEO optimization with Google Search Console.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Hotel Info & Management System</h3>
+          <a
+            href="https://github.com/KasoHodaj/Hotel-Information-Managment-System.git"
+            target="_blank"
+            rel="noopener"
+            class="project-card-link"
+            >LINK</a
+          >
+          <span>Oct 2024 – Nov 2024</span>
+          <p>
+            Java-based booking management prototype emphasizing human-machine
+            interaction. A Java Swing project managing bookings and customer
+            data with a solid database backend. UI designed in Figma focusing on
+            user-friendly interaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer" id="contact">
+      <p>© 2025 Kaso Hodaj • Netflix-inspired Portfolio</p>
+    </footer>
+
+    <script src="../../home.js"></script>
+  </body>
+</html>

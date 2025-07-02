@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certifications</title>
+    <link rel="stylesheet" href="../../css/home.css" />
+    <style>
+      body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.back-button {
+  display: inline-block;
+  margin: 1.5rem 0 1rem 1rem;
+  background-color: var(--netflix-red, #e50914);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.back-button:hover {
+  background-color: var(--netflix-dark-red, #b20710);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #e50914;
+  margin: 3rem 0 2rem;
+}
+
+.cert-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem 4rem;
+}
+
+.cert-card {
+  background: #1c1c1c;
+  border-radius: 10px;
+  border: 1px solid #2b2b2b;
+  padding: 1.5rem 1.25rem 1.25rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  position: relative;
+}
+
+.cert-card:hover {
+  border-color: #e50914;
+  transform: translateY(-5px);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cert-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e50914;
+  margin: 0;
+}
+
+.cert-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--netflix-red, #e50914);
+  color: #fff;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+
+.cert-link:hover {
+  background-color: var(--netflix-dark-red, #b20710);
+  transform: scale(1.05);
+}
+
+.cert-org {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.cert-date {
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+}
+
+.cert-desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #ddd;
+}
+
+
+@media (max-width: 480px) {
+  .cert-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .cert-title {
+    font-size: 1rem;
+  }
+
+  .cert-desc {
+    font-size: 0.88rem;
+  }
+
+  .back-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    margin: 1rem;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+    <div class="logo">Kaso Hodaj</div>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="./site.html">Behind the Build</a>
+      <a href="../../index.html">
+        <span style="color: #e50914; font-size: larger">Exit</span>
+      </a>
+    </nav>
+  </header>
+
+    <a href="../home.html" class="back-button">Home</a>
+
+    <section>
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-title">WordPress Seminar</div>
+           <a href="../../css/assets/certifications/KASO HODAJ_WORDPRESS.pdf" target="_blank" class="cert-link">PDF</a>
+          <div class="cert-org">KEM Lifelong Learning Center (Greece)</div>
+          <div class="cert-date">Completed April 7, 2025 — 30 hours</div>
+          <div class="cert-desc">
+            Structured training blending theory and practical exercises. Gained skills in building and customizing WordPress
+            websites.
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-title">Digital Skills</div>
+           <a href="../../css/assets/certifications/e4e_digiskills_merged.pdf" target="_blank" class="cert-link">PDF</a>
+          <div class="cert-org">Engineers4Europe (EU) & Coursera</div>
+          <div class="cert-date">Completed 2023–2025</div>
+          <div class="cert-desc">
+            Courses: DigiComp, SECURE DigiGuard, SOLVE DigiTech, WordPress, UX Design (Google), Intro to Front-End (Meta). Skills:
+            UX · JS · React · Cybersecurity · Accessibility.
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-title">Green Skills</div>
+           <a href="../../css/assets/certifications/e4e_LifeComp.pdf" target="_blank" class="cert-link">PDF</a>
+          <div class="cert-org">Engineers4Europe (EU)</div>
+          <div class="cert-date">Completed 2023–2024</div>
+          <div class="cert-desc">
+            Courses: Envisioning Sustainability, Embracing Complexity, Embodying Values. Focus: ESG, systems thinking, sustainable
+            strategy, ethical design.
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-title">Life Skills</div>
+           <a href="../../css/assets/certifications/e4e_lifeskills_merged.pdf" target="_blank" class="cert-link">PDF</a>
+          <div class="cert-org">Engineers4Europe (EU)</div>
+          <div class="cert-date">Completed 2024</div>
+          <div class="cert-desc">
+            Course: LifeComp – Strategic Shift. Focus: adaptability, feedback literacy, personal growth, and career readiness.
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-title">Intro to Front-End Development</div>
+           <a href="../../css/assets/certifications/Coursera_FRONT_END_INTRO.pdf" target="_blank" class="cert-link">PDF</a>
+          <div class="cert-org">Meta (via Coursera)</div>
+          <div class="cert-date">Completed March 7, 2024 — ~19 hours, 97%</div>
+          <div class="cert-desc">
+            Covered HTML, CSS, JavaScript, responsive layouts, and modern tools like React and Bootstrap.
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-title">Foundations of UX Design</div>
+           <a href="../../css/assets/certifications/Coursera_UI-UX.pdf" target="_blank" class="cert-link">PDF</a>
+          <div class="cert-org">Google (via Coursera)</div>
+          <div class="cert-date">Completed February 21, 2024 — ~13 hours, 100%</div>
+          <div class="cert-desc">
+            Topics: UX principles, wireframing, accessibility, sprint planning, and cross-platform design.
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-title">Emerging Technologies & AI Awareness</div>
+           <a href"#" target="_blank" class="cert-link">PDF</a>
+          <div class="cert-org">International Hellenic University</div>
+          <div class="cert-date">Completed November 14, 2023</div>
+          <div class="cert-desc">
+            Seminar: "AI and Its Evolution" — Focused on ethical implications, societal risks, and innovation potential in AI
+            advancement.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer" id="contact">
+      <p>© 2025 Kaso Hodaj • Netflix-inspired Portfolio</p>
+    </footer>
+
+    <script src="../../home.js"></script>
+  </body>
+</html>

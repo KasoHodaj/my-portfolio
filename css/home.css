@@ -1,0 +1,442 @@
+:root {
+  --netflix-red: #E50914;
+  --netflix-dark-red: #B20710;
+  --netflix-bg: #141414;
+  --text-color: #ffffff;
+  --gray: #999999;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: var(--netflix-bg);
+  color: var(--text-color);
+}
+
+/* === Header === */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(20, 20, 20, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--netflix-red);
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.burger {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: var(--netflix-red);
+} 
+
+.card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
+/* === Hero Banner === */
+.hero-banner {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(20, 20, 20, 0.85), rgba(20, 20, 20, 0.2)), url('./assets/images/lofi_running.gif') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.hero-text {
+  max-width: 700px;
+  margin-bottom: -50px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: var(--gray);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #e6e6e6;
+}
+
+.btn-secondary {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(109, 109, 110, 1);
+}
+
+/* === Carousel Section === */
+.carousel-section {
+  padding: 2rem;
+}
+
+.carousel-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.card-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.card-row::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 200px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #222;
+  position: relative;
+  transition: transform 0.3s ease;
+  scroll-snap-align: start;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* === Footer === */
+.main-footer {
+  margin-top: 5%;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  border-top: 1px solid #222;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* === Responsive Styles === */
+
+@media (max-width: 1100px) {
+  .hero-text {
+    max-width: 90vw;
+    margin-bottom: -30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links a {
+    flex: 1 1 45%;
+    text-align: left;
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .hero-banner {
+    height: 50vh;
+  }
+
+  .hero-overlay {
+    padding: 2rem 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .carousel-section {
+    padding: 1rem;
+  }
+
+  .card {
+    flex: 0 0 140px;
+  }
+
+  .card img {
+    height: 90px;
+  }
+
+  .main-footer {
+    font-size: 0.85rem;
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 0rem;
+    right: 1.5rem;
+    z-index: 101;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .burger:hover {
+    color: var(--netflix-red);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 30px;
+    left: 0rem;
+    background: rgba(20, 20, 20, 0.98);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s;
+    padding: 0 1.5rem;
+    z-index: 100;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links a {
+    padding: 0.5rem 0;
+    width: 100%;
+    font-size: 1rem;
+    border-bottom: 1px solid #222;
+    margin-left: 0;
+    color: #fff;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 0.5rem;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+  .nav-links a:hover {
+    background: var(--netflix-red);
+    color: #fff;
+  }
+  .nav-links.active {
+    max-height: 500px;
+    opacity: 1;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-links a {
+    flex: 1 1 48%;
+    text-align: left;
+    margin-left: 0;
+    font-size: 0.95rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .hero-banner {
+    height: 35vh;
+    min-height: 220px;
+  }
+
+  .hero-overlay {
+    padding: 1rem 0.75rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: -10px;
+  }
+
+  .hero-text h1 {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .btn,
+  .btn-secondary {
+    width: 100%;
+    padding: 0.3rem 0;
+    font-size: 0.90rem;
+  }
+
+  .carousel-section {
+    padding: 1rem;
+  }
+
+  .carousel-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-row {
+    gap: 0.5rem;
+  }
+
+  .card {
+    flex: 0 0 110px;
+  }
+
+  .card img {
+    height: 100px;
+  }
+
+  .card-title {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+
+  .main-footer {
+    margin-top: 30%;
+    font-size: 0.75rem;
+    padding: 1rem 0.5rem;
+  }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behind the Build</title>
+  <link rel="stylesheet" href="../../css/home.css" />
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e50914;
+    }
+
+    .nav-links a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: #e50914;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 2rem;
+      background-color: var(--netflix-red, #e50914);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      border: none;
+    }
+
+    .back-button:hover {
+      background-color: var(--netflix-dark-red, #b20710);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .about-tech-section {
+      padding: 3rem 1rem 5rem;
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+    }
+
+    .about-tech-wrapper {
+      max-width: 900px;
+      background-color: #1c1c1c;
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #e50914;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .section-title-sm {
+      font-size: 1.4rem;
+      color: #e50914;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .about-tech-wrapper p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+
+    .tech-list {
+      list-style: none;
+      padding-left: 0;
+      color: #ccc;
+    }
+
+    .tech-list li {
+      margin-bottom: 0.7rem;
+      font-size: 0.95rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .tech-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #e50914;
+    }
+
+    .main-footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="logo">Kaso Hodaj</div>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="./site.html">Behind the Build</a>
+      <a href="../../index.html">
+        <span style="color: #e50914; font-size: larger">Exit</span>
+      </a>
+    </nav>
+  </header>
+
+  <a href="../home.html" class="back-button">← Home</a>
+
+  <section class="about-tech-section">
+    <div class="about-tech-wrapper">
+      <h1 class="section-title">🎬 Behind the Build</h1>
+
+      <p>
+        This portfolio is a personalized expression of who I am — crafted line-by-line with no templates or builders. Its design is heavily inspired by Netflix’s dark cinematic interface, blending storytelling with functionality.
+      </p>
+
+      <p>
+        Everything you see is built using plain HTML, CSS, and JavaScript. Beyond showcasing my work, this site demonstrates my approach to UI/UX, design discipline, and love for clean architecture.
+      </p>
+
+      <hr />
+
+      <h2 class="section-title-sm">🧰 Tech Stack</h2>
+      <ul class="tech-list">
+        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (Vanilla)</li>
+        <li><strong>Styling:</strong> Custom CSS, Netflix UI-inspired visuals</li>
+        <li><strong>Design Tools:</strong> Figma for layout & prototyping</li>
+        <li><strong>Dev Tools:</strong> VS Code, Git (GitHub)</li>
+        <li><strong>Deployment:</strong> Static hosting (e.g. GitHub Pages, Netlify)</li>
+        <li><strong>Features:</strong> Fully responsive layout, accessibility-first approach, SEO-ready structure</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="main-footer" id="contact">
+    <p>© 2025 Kaso Hodaj • Netflix-inspired Portfolio</p>
+  </footer>
+
+  <script src="../../home.js"></script>
+</body>
+</html>

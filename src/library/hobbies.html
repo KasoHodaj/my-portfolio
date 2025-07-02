@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hobbies</title>
+  <link rel="stylesheet" href="../../css/home.css" />
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 1.5rem 0 1rem 1rem;
+      background-color: var(--netflix-red, #e50914);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      border: none;
+    }
+
+    .back-button:hover {
+      background-color: var(--netflix-dark-red, #b20710);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .hobby-section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #e50914;
+      margin-bottom: 1.5rem;
+    }
+
+    .hobby-intro {
+      text-align: center;
+      font-size: 1.05rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    .hobby-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #1c1c1c;
+      color: #eee;
+      border: 1px solid #2b2b2b;
+      font-size: 0.95rem;
+    }
+
+    .hobby-table th,
+    .hobby-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid #2b2b2b;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .hobby-table th {
+      background: #e50914;
+      color: white;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .hobby-table tr:hover {
+      background-color: #2a2a2a;
+    }
+
+    @media (max-width: 768px) {
+      .hobby-table {
+        font-size: 0.85rem;
+      }
+      .hobby-table th,
+      .hobby-table td {
+        padding: 0.6rem 0.8rem;
+      }
+      .hobby-intro {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">Kaso Hodaj</div>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="../partials/site.html">Behind the Build</a>
+      <a href="../../index.html">
+        <span style="color: #e50914; font-size: larger">Exit</span>
+      </a>
+    </nav>
+  </header>
+
+  <a href="../home.html" class="back-button">Home</a>
+
+  <section class="hobby-section">
+    <h2 class="section-title">🎮 My Favorite Non-Tech Hobbies</h2>
+    <p class="hobby-intro">
+      When I'm not coding, I enjoy immersing myself in sci-fi stories, exploring new manga, staying active through exercise, and playing story-rich video games.
+    </p>
+
+    <div class="table-wrapper">
+      <table class="hobby-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Author / Creator</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Dune</strong></td>
+            <td>Sci-Fi / Epic / Political</td>
+            <td>Frank Herbert / Various</td>
+            <td>A foundational sci-fi saga exploring power, ecology, and prophecy on the desert world of Arrakis.</td>
+          </tr>
+          <tr>
+            <td><strong>Star Wars</strong></td>
+            <td>Sci-Fi / Space Opera / Fantasy</td>
+            <td>George Lucas / Expanded Universe</td>
+            <td>Jedi vs Sith, rebellion vs empire — a vast universe told across films, novels, comics, and manga.</td>
+          </tr>
+          <tr>
+            <td><strong>One Piece</strong></td>
+            <td>Shonen / Adventure / Fantasy</td>
+            <td>Eiichiro Oda</td>
+            <td>Epic pirate journey filled with lore, emotion, and imagination — over 1000 chapters and still going strong.</td>
+          </tr>
+          <tr>
+            <td><strong>Berserk</strong></td>
+            <td>Dark Fantasy / Action / Horror</td>
+            <td>Kentaro Miura</td>
+            <td>A cursed swordsman fights inner demons and monsters in a brutal world. Dark, deep, and unforgettable.</td>
+          </tr>
+          <tr>
+            <td><strong>Vinland Saga</strong></td>
+            <td>Historical / Seinen / Drama</td>
+            <td>Makoto Yukimura</td>
+            <td>From bloody Viking revenge to pacifist philosophy — a rich tale of human transformation.</td>
+          </tr>
+          <tr>
+            <td><strong>One Punch-Man</strong></td>
+            <td>Action / Comedy / Superhero</td>
+            <td>ONE / Yusuke Murata</td>
+            <td>Hilarious, overpowered satire with jaw-dropping art and surprising narrative twists.</td>
+          </tr>
+          <tr>
+            <td><strong>20th Century Boys</strong></td>
+            <td>Mystery / Thriller / Sci-Fi</td>
+            <td>Naoki Urasawa</td>
+            <td>Childhood memories turn deadly as a cult rises. Complex, gripping, and unforgettable.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="section-title">💪 My Sports & Fitness Interests</h2>
+<div class="table-wrapper">
+  <table class="hobby-table">
+    <thead>
+      <tr>
+        <th>Sport / Activity</th>
+        <th>Type</th>
+        <th>Why I Enjoy It</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Gym / Strength Training</strong></td>
+        <td>Fitness / Conditioning</td>
+        <td>Builds discipline, strength, and mental focus. Love seeing progress over time.</td>
+      </tr>
+      <tr>
+        <td><strong>Running</strong></td>
+        <td>Endurance / Cardio</td>
+        <td>Clears the mind, boosts stamina, and gives a great mental reset.</td>
+      </tr>
+      <tr>
+        <td><strong>Swimming</strong></td>
+        <td>Full-body / Low-impact</td>
+        <td>Combines relaxation with a powerful cardio and muscle workout.</td>
+      </tr>
+      <tr>
+        <td><strong>Formula 1 (F1)</strong></td>
+        <td>Motorsport / Strategy</td>
+        <td>High-speed drama, precision, tech innovation, and elite-level focus.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Favorite Video Games -->
+<h2 class="section-title">🎮 Your Favorite Video Games</h2>
+<div class="table-wrapper">
+  <table class="hobby-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Why It’s Great</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>God of War (2018)</strong></td>
+        <td>Action / Mythology / Adventure</td>
+        <td>Stunning story and combat; Kratos’ emotional evolution in Norse mythology.</td>
+      </tr>
+      <tr>
+        <td><strong>God of War Ragnarök</strong></td>
+        <td>Action / Mythology / Adventure</td>
+        <td>Bigger, more emotional, and packed with epic battles and Norse lore.</td>
+      </tr>
+      <tr>
+        <td><strong>The Witcher 3: Wild Hunt</strong></td>
+        <td>RPG / Fantasy / Open-world</td>
+        <td>Deep narrative, meaningful choices, and immersive worldbuilding.</td>
+      </tr>
+      <tr>
+        <td><strong>The Last of Us</strong></td>
+        <td>Survival / Action / Drama</td>
+        <td>Heart-wrenching story with unforgettable characters and emotional depth.</td>
+      </tr>
+      <tr>
+        <td><strong>Super Mario World</strong></td>
+        <td>Platformer / Classic</td>
+        <td>Iconic design and gameplay; timeless fun that still holds up.</td>
+      </tr>
+      <tr>
+        <td><strong>Subnautica</strong></td>
+        <td>Survival / Exploration / Sci-Fi</td>
+        <td>A beautiful and terrifying underwater world full of secrets and tension.</td>
+      </tr>
+      <tr>
+        <td><strong>The Legend of Zelda</strong></td>
+        <td>Adventure / Puzzle / Fantasy</td>
+        <td>Legendary series known for exploration, clever puzzles, and epic storytelling.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </section>
+
+  <footer class="main-footer" id="contact">
+    <p>© 2025 Kaso Hodaj • Netflix-inspired Portfolio</p>
+  </footer>
+
+  <script src="../../home.js"></script>
+</body>
+</html>

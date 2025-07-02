@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <link rel="stylesheet" href="../../css/home.css " />
+    <style>
+      .skills-section {
+        padding: 4rem 1rem;
+
+        color: #fff;
+        max-width: 1200px;
+        margin: auto;
+        position: relative;
+      }
+
+      .skills-section h2 {
+        text-align: center;
+        font-size: 2.2rem;
+        color: #e50914;
+        margin-bottom: 2rem;
+      }
+
+      .skills-category {
+        margin-bottom: 2.5rem;
+      }
+
+      .skills-category h3 {
+        font-size: 1.6rem;
+        color: #fff;
+        border-bottom: 2px solid #e50914;
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
+
+      .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .skill-card {
+        background: #1c1c1c;
+        padding: 1rem 1.25rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        font-weight: 500;
+        text-align: center;
+        min-width: 140px;
+        color: #eee;
+        border: 1px solid #2b2b2b;
+        transition: transform 0.3s ease;
+      }
+
+      .skill-card:hover {
+        transform: translateY(-5px);
+        border-color: #e50914;
+        color: #fff;
+      }
+
+      .back-button {
+        display: inline-block;
+        margin: 1.5rem 0 1rem 1rem;
+        background-color: var(--netflix-red);
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s, box-shadow 0.2s;
+        font-size: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        border: none;
+        position: static;
+        z-index: 1;
+      }
+
+      .back-button:hover {
+        background-color: var(--netflix-dark-red);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+      }
+      /* Responsive */
+      @media (max-width: 768px) {
+        .skills-grid {
+          justify-content: center;
+        }
+        .back-button {
+          top: 1rem;
+          right: 1rem;
+          padding: 0.4rem 0.9rem;
+          font-size: 0.85rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .back-button {
+          margin: 1rem 0 0.5rem 0.5rem;
+          font-size: 0.95rem;
+          padding: 0.4rem 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .skill-card {
+          min-width: 100px;
+          padding: 0.8rem;
+          font-size: 0.9rem;
+        }
+        .back-button {
+          margin: 1rem 0 0.5rem 0.5rem;
+          font-size: 0.95rem;
+          padding: 0.4rem 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- === Header === -->
+   <header class="main-header">
+    <div class="logo">Kaso Hodaj</div>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="./site.html">Behind the Build</a>
+      <a href="../../index.html">
+        <span style="color: #e50914; font-size: larger">Exit</span>
+      </a>
+    </nav>
+  </header>
+
+    <a href="../home.html" class="back-button">Home</a>
+    <section class="skills-section" id="skills">
+      <h2>Tech Stack & Tools</h2>
+
+      <div class="skills-category">
+        <h3>Frontend</h3>
+        <div class="skills-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Bootstrap</div>
+          <div class="skill-card">Figma</div>
+          <div class="skill-card">EJS</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Backend</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Node.js</div>
+          <div class="skill-card">Express.js</div>
+          <div class="skill-card">Java</div>
+          <div class="skill-card">C</div>
+          <div class="skill-card">Firebase</div>
+          <div class="skill-card">Kotlin</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Databases</h3>
+        <div class="skills-grid">
+          <div class="skill-card">PostgreSQL</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Tools & Platforms</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Git</div>
+          <div class="skill-card">WordPress</div>
+          <div class="skill-card">Microsoft Office</div>
+          <div class="skill-card">Canva</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Operating Systems</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Linux</div>
+          <div class="skill-card">Windows</div>
+          <div class="skill-card">iOS</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Other Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">UX Design</div>
+          <div class="skill-card">Agile</div>
+          <div class="skill-card">Teamwork</div>
+          <div class="skill-card">Problem Solving</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer" id="contact">
+      <p>© 2025 Kaso Hodaj • Netflix-inspired Portfolio</p>
+    </footer>
+
+    <script src="../../home.js"></script>
+  </body>
+</html>

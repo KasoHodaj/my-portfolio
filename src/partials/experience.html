@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience & Education</title>
+    <link rel="stylesheet" href="../../css/home.css" />
+    <style>
+      body {
+        background-color: #111;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .back-button {
+        display: inline-block;
+        margin: 1.5rem 0 1rem 1rem;
+        background-color: var(--netflix-red);
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s, box-shadow 0.2s;
+        font-size: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        border: none;
+      }
+
+      .back-button:hover {
+        background-color: var(--netflix-dark-red);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        margin: 4rem 1rem 2rem;
+        color: #e50914;
+      }
+
+      .timeline {
+        max-width: 800px;
+        margin: auto;
+        padding: 0 1rem 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .card {
+        background: #1c1c1c;
+        border-radius: 8px;
+        padding: 1.5rem 2rem;
+        border: 1px solid #2b2b2b;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        max-height: 8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .card h3 {
+        margin-top: 0;
+        color: #e50914;
+        font-size: 1.3rem;
+      }
+
+      .card span {
+        font-size: 0.9rem;
+        color: #bbb;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .card p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* show max 3 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        color: #aaa;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 600px) {
+        .card {
+          padding: 3rem 1rem;
+          max-height: 7rem;
+        }
+
+        .card h3 {
+          font-size: 1.1rem;
+        }
+
+        .card p {
+          font-size: 0.85rem;
+          -webkit-line-clamp: 3;
+        }
+
+        .back-button {
+          margin: 1rem 0 0.5rem 0.5rem;
+          font-size: 0.95rem;
+          padding: 0.4rem 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+    <div class="logo">Kaso Hodaj</div>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="./site.html">Behind the Build</a>
+      <a href="../../index.html">
+        <span style="color: #e50914; font-size: larger">Exit</span>
+      </a>
+    </nav>
+  </header>
+
+    <section>
+      <a href="../home.html" class="back-button">Home</a>
+      <h2 class="section-title">Experience, Education & Volunteering</h2>
+
+      <div class="timeline">
+        <div class="card">
+          <h3>Integrated MSc Information & Electronics Engineering</h3>
+          <span>International Hellenic University • Oct 2022 – Present</span>
+          <p>
+            Focused on web and software technologies, embedded systems, AI, and
+            databases. Developed hands-on skills through team-based academic
+            projects and coursework.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Server</h3>
+          <span>Paxoi, Corfu • Jun 2020 – Sep 2024</span>
+          <p>
+            Worked in a fast-paced restaurant, managing service for 300+ guests
+            per shift. Enjoyed team coordination and customer interaction.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Voxxed Days Thessaloniki Volunteer</h3>
+          <span>Thessaloniki • Oct 2023</span>
+          <p>
+            Assisted in logistics and coordination for a local developer
+            conference. It was a great opportunity to connect with the tech
+            community.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Infantry Soldier</h3>
+          <span>Greek Army, Alexandroupoli • Jun 2019 – Feb 2020</span>
+          <p>
+            Gained structure, discipline, and resilience while completing
+            military service. Worked under pressure and within a
+            chain-of-command system.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <p>© 2025 Kaso Hodaj • Netflix-inspired Portfolio</p>
+    </footer>
+
+    <script src="../../home.js"></script>
+  </body>
+</html>

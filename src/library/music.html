@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Music</title>
+    <link rel="stylesheet" href="../../css/home.css" />
+
+    <style>
+      .back-button {
+        display: inline-block;
+        margin: 1.5rem 0 1rem 1rem;
+        background-color: var(--netflix-red, #e50914);
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        border: none;
+      }
+
+      .back-button:hover {
+        background-color: var(--netflix-dark-red, #b20710);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+      }
+
+      .table-wrapper {
+        overflow-x: auto;
+        padding: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .music-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #1c1c1c;
+        color: #eee;
+        border: 1px solid #2b2b2b;
+        font-size: 0.95rem;
+      }
+
+      .music-table th,
+      .music-table td {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #2b2b2b;
+        text-align: left;
+      }
+
+      .music-table th {
+        background: #e50914;
+        color: white;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      .music-table tr:hover {
+        background-color: #2a2a2a;
+      }
+
+      .music-section .section-title {
+        text-align: center;
+        font-size: 2rem;
+        color: #e50914;
+        margin-bottom: 1.5rem;
+      }
+
+      @media (max-width: 600px) {
+        .music-table {
+          font-size: 0.85rem;
+        }
+
+        .music-table th,
+        .music-table td {
+          padding: 0.5rem 0.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+    <div class="logo">Kaso Hodaj</div>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="../partials/site.html">Behind the Build</a>
+      <a href="../../index.html">
+        <span style="color: #e50914; font-size: larger">Exit</span>
+      </a>
+    </nav>
+  </header>
+
+    <a href="../home.html" class="back-button">Home</a>
+
+    <section class="music-section">
+      <h2 class="section-title">🎧 Favorite Tracks</h2>
+      <div class="table-wrapper">
+        <table class="music-table">
+          <thead>
+            <tr>
+              <th>Artist</th>
+              <th>Song</th>
+              <th>Album</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="4"><strong>Eminem</strong></td>
+              <td>The Way I Am</td>
+              <td>The Marshall Mathers LP</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>Beautiful</td>
+              <td>Relapse</td>
+              <td>2009</td>
+            </tr>
+            <tr>
+              <td>Stan (feat. Dido)</td>
+              <td>The Marshall Mathers LP</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>Like Toy Soldiers</td>
+              <td>Encore</td>
+              <td>2004</td>
+            </tr>
+
+            <tr>
+              <td rowspan="4"><strong>Coldplay</strong></td>
+              <td>Paradise</td>
+              <td>Mylo Xyloto</td>
+              <td>2011</td>
+            </tr>
+            <tr>
+              <td>Yellow</td>
+              <td>Parachutes</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>Viva La Vida</td>
+              <td>Viva La Vida or Death and All His Friends</td>
+              <td>2008</td>
+            </tr>
+            <tr>
+              <td>A Sky Full of Stars</td>
+              <td>Ghost Stories</td>
+              <td>2014</td>
+            </tr>
+
+            <tr>
+              <td rowspan="4"><strong>Imagine Dragons</strong></td>
+              <td>Enemy</td>
+              <td>Arcane Soundtrack</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Sharks</td>
+              <td>Mercury – Acts 1 & 2</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Believer</td>
+              <td>Evolve</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <td>Thunder</td>
+              <td>Evolve</td>
+              <td>2017</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="main-footer" id="contact">
+      <p>© 2025 Kaso Hodaj • Netflix-inspired Portfolio</p>
+    </footer>
+
+    <script src="../../home.js"></script>
+  </body>
+</html>

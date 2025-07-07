@@ -72,7 +72,7 @@ This is my personal portfolio website, inspired by the Netflix interface. It's b
 ## 🛠️ Tech Stack
 
 <div align="center">
-  ![HTML](https://img.shields.io/badge/HTML-86.2%25-E34F26?style=for-the-badge&logo=html&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-12.8%25-1572B6?style=for-the-badge&logo=css&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-1.0%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+  ![HTML] - ![CSS] - ![JavaScript] 
 </div>
 
 

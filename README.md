@@ -78,13 +78,6 @@ This is my personal portfolio website, inspired by the Netflix interface. It's b
 
 ## 🎯 Getting Started
 
-### Prerequisites
-
-Make sure you have the following installed:
-
-- Node.js
-- npm
-
 ### 🔧 Installation
 
 ```bash
@@ -94,11 +87,6 @@ git clone https://github.com/KasoHodaj/my-portfolio.git
 # Navigate to project directory
 cd my-portfolio
 
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
 ```
 
 ## 🌟 Features
@@ -109,15 +97,6 @@ npm run dev
 - 🔒 Secure by default
 - 🎨 Customizable themes
 
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. 🍴 Fork the repository
-2. 🌿 Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. 💾 Commit your changes (`git commit -m 'Add amazing feature'`)
-4. 📤 Push to the branch (`git push origin feature/amazing-feature`)
-5. 🔁 Open a Pull Request
 
 ## 📄 License
 

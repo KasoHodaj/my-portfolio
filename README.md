@@ -10,7 +10,8 @@
   </div>
   
   <p style="font-size: 18px; color: #666; font-weight: 500; margin: 20px 0;">
-    No description provided.
+    # Kaso Hodaj – Developer Portfolio
+This is my personal portfolio website, inspired by the Netflix interface. It's built with HTML, CSS, and JavaScript, and designed to showcase my background, projects, certifications, and personal interests in a clear and engaging way.
   </p>
 </div>
 
@@ -28,8 +29,7 @@
 </div>
 
 ## 📖 About
-
-No description provided.
+This is my personal portfolio website, inspired by the Netflix interface. It's built with HTML, CSS, and JavaScript, and designed to showcase my background, projects, certifications, and personal interests in a clear and engaging way.
 
 
 ## 📊 Repository Statistics

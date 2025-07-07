@@ -72,7 +72,7 @@ This is my personal portfolio website, inspired by the Netflix interface. It's b
 ## 🛠️ Tech Stack
 
 <div align="center">
-  ![HTML] - ![CSS] - ![JavaScript] 
+  HTML - CSS - JavaScript (Vanilla) 
 </div>
 
 
@@ -82,8 +82,8 @@ This is my personal portfolio website, inspired by the Netflix interface. It's b
 
 Make sure you have the following installed:
 
-- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) `v16+`
-- ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) `v8+`
+- Node.js
+- npm
 
 ### 🔧 Installation
 

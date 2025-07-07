@@ -109,16 +109,6 @@ npm run dev
 - 🔒 Secure by default
 - 🎨 Customizable themes
 
-## 📚 Usage
-
-Add your usage examples here:
-
-```javascript
-// Example code snippet
-const example = "Hello, World!";
-console.log(example);
-```
-
 ## 🤝 Contributing
 
 We welcome contributions! Please follow these steps:
@@ -132,11 +122,6 @@ We welcome contributions! Please follow these steps:
 ## 📄 License
 
 This project is licensed under the **MIT License** License.
-
-## 🙏 Acknowledgments
-
-- Thanks to all contributors who helped make this project better
-- Special thanks to the open-source community
 
 ---
 
